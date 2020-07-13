@@ -42,7 +42,7 @@ for image_path in parameters.images_paths:
 
     print('전체 라벨 :', labels)
 
-    with open(f'labels.txt', 'a') as file:
+    with open(f'result_labels.txt', 'a') as file:
         file.write(f'<{image_path}>\n')
         file.write(' '.join(labels)+'\n')
 
